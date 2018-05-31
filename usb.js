@@ -6,7 +6,7 @@ var usb;
 try {
     usb = exports = module.exports = require(binding_path);
 } catch (e) {
-    usb = exports = module.exports = process.binding('node-usb');
+    usb = exports = module.exports = process.binding('usb_bindings');
 }
 
 var events = require('events')
